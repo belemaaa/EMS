@@ -19,7 +19,7 @@ const Navbar = () => {
     }
   return (
     <div className='h-[100%]'>
-        <div className='hidden lg:flex h-screen bg-[#353638] flex-col lg:w-[20%] duration-500 text-gray-200'>
+        <div className='hidden lg:flex h-screen bg-[#353638] flex-col duration-500 text-gray-200'>
             <div className='flex flex-row py-5 border-b border-b-[#4f5962]'>
                 <SiGoogletagmanager size={40} className='ml-7 mr-3'/>
                 <p className='text-lg mt-2 mr-3 font-semibold'>EmployeeManager</p>

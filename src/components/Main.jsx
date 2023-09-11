@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from './NavBar'
 import {BsPerson} from 'react-icons/bs'
+import {IoMdAddCircle} from 'react-icons/io'
 
 const Main = () => {
     const [personIcon, setPersonIcon] = useState(false)
@@ -9,22 +10,37 @@ const Main = () => {
     }
   return (
     <div className='flex flex-col lg:flex-row'>
-        <div className='w-[100%]'>
+        <div className='w-[22%]'>
             <Navbar/>
         </div>
 
-        <div className='hidden lg:flex'>
-            <div onClick={Navbar.togglePIcon} className='text-xl mr-10 mt-6 text-gray-600'>
-                {personIcon ? <BsPerson/> : <BsPerson/>}
+        <div className='w-[100%]'>
+            <div className='hidden md:hidden lg:flex justify-end items-center'>
+                <div onClick={Navbar.togglePIcon} className='text-xl mr-10 my-6 text-gray-600'>
+                    {personIcon ? <BsPerson/> : <BsPerson/>}
+                </div>
+
+                {personIcon && (
+                    <div>
+                        <p>Account</p>
+                    </div>
+                )}
+
             </div>
 
-            {personIcon && (
-                <div>
-                    <p>Account</p>
-                </div>
-            )}
+            <div className='bg-gray-100 h-fit'>
+                <div className='flex flex-row py-5 mx-8 justify-between border-t-[#4f5962] border-b-[#4f5962]'>
+                    <p className='border-r text-2xl border-r-[#97999b] pr-6 space-x-0'>Employees</p>
+                    <p className='text-gray-500'>previews</p>
 
+                    <div className='flex flex-row bg-[#2c8442] py-2 px-3 rounded-lg text-white'>
+                        <IoMdAddCircle size={23} className='mr-2'/>
+                        <p>Add employee</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </div>
   )
 }
