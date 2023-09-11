@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row lg:hidden bg-white text-center justify-between items-center pt-6'>
-            <div onClick={toggleNav} className='text-lg ml-10'>
+            <div onClick={toggleNav} className='text-lg ml-10 text-gray-600'>
                 {nav ? <FaTimes /> : <FaBars />}
             </div>
             {nav && (
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
             )}
 
-            <div onClick={togglePIcon} className='text-xl mr-10'>
+            <div onClick={togglePIcon} className='text-xl mr-10 text-gray-600'>
                 {personIcon ? <BsPerson/> : <BsPerson/>}
             </div>
 
