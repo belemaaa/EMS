@@ -5,8 +5,7 @@ import {RxDashboard} from 'react-icons/rx'
 import {HiOutlineLogout} from 'react-icons/hi'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {BsPerson} from 'react-icons/bs'
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom'
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
