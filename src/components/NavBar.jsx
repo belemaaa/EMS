@@ -77,6 +77,7 @@ const Navbar = () => {
             {personIcon && (
                 <div>
                     <p>Account</p>
+                    <p>Logout</p>
                 </div>
             )}
         </div>
