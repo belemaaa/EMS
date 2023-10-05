@@ -9,7 +9,7 @@ const Login = () => {
       <div className='mb-6'>
         <SiGoogletagmanager size={60}/>
       </div>
-      <div className='shadow-lg rounded-lg my-6 text-center w-[550px] border'>
+      <div className='shadow-lg rounded-lg my-6 text-center w-[370px] md:w-[550px] border'>
         <p className='my-6 text-xl font-semibold text-gray-600'>Welcome</p>
         <form method='POST'>
           <div className='flex flex-row mx-6 border'>
@@ -26,7 +26,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className='w-[500px] bg-blue-500 hover:bg-blue-600 m-6 duration-500'>
+          <div className='md:w-[500px] bg-blue-500 hover:bg-blue-600 m-6 duration-500'>
             <button typeof='submit' className='text-center text-white py-2 text-lg'>Log in</button>
           </div>
           
