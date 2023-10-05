@@ -33,7 +33,7 @@ const Main = () => {
                     <p className='border-r text-lg md:text-2xl border-r-[#97999b] pr-1 md:pr-6'>Employees</p>
                     <p className='text-gray-500 text-sm md:text-base'>previews</p>
 
-                    <div className='flex flex-row bg-[#2c8442] py-1 md:py-2 px-1 md:px-3 rounded-lg text-white'>
+                    <div className='flex flex-row bg-[#2c8442] py-2 px-1 md:px-3 rounded-lg text-white'>
                         <IoMdAddCircle className='md:mr-2 text-lg md:text-2xl mt-0.5 md:mt-0'/>
                         <p className='text-sm md:text-base'>Add employee</p>
                     </div>

@@ -41,9 +41,15 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row lg:hidden bg-white text-center justify-between items-center pt-6'>
-            <div onClick={toggleNav} className='text-lg ml-10 text-gray-600'>
+            <div onClick={toggleNav} className='flex justify-start items-start text-lg ml-10 text-gray-600'>
                 {nav ? <FaTimes /> : <FaBars />}
             </div>
+            <div className='flex justify-end ml-[300px]'>
+                <div onClick={togglePIcon} className='text-xl text-gray-600'>
+                    {personIcon ? <BsPerson /> : <BsPerson />}
+                </div>
+            </div>
+            {/* nav menus */}
             {nav && (
                 <div
                     className={`${
@@ -69,11 +75,6 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
-
-            <div onClick={togglePIcon} className='text-xl mr-10 text-gray-600'>
-                {personIcon ? <BsPerson/> : <BsPerson/>}
-            </div>
-
             {personIcon && (
                 <div>
                     <p>Account</p>
