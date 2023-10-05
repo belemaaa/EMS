@@ -30,12 +30,12 @@ const Main = () => {
 
             <div className='bg-gray-100 h-fit'>
                 <div className='flex flex-row py-5 mx-8 justify-between border-t-[#4f5962] border-b-[#4f5962]'>
-                    <p className='border-r text-2xl border-r-[#97999b] pr-6 space-x-0'>Employees</p>
-                    <p className='text-gray-500'>previews</p>
+                    <p className='border-r text-lg md:text-2xl border-r-[#97999b] pr-1 md:pr-6'>Employees</p>
+                    <p className='text-gray-500 text-sm md:text-base'>previews</p>
 
-                    <div className='flex flex-row bg-[#2c8442] py-2 px-3 rounded-lg text-white'>
-                        <IoMdAddCircle size={23} className='mr-2'/>
-                        <p>Add employee</p>
+                    <div className='flex flex-row bg-[#2c8442] py-1 md:py-2 px-1 md:px-3 rounded-lg text-white'>
+                        <IoMdAddCircle className='md:mr-2 text-lg md:text-2xl mt-0.5 md:mt-0'/>
+                        <p className='text-sm md:text-base'>Add employee</p>
                     </div>
                 </div>
             </div>
