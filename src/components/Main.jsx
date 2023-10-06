@@ -22,7 +22,7 @@ const Main = () => {
 
                 {personIcon && (
                     <div>
-                        <p>Account</p>
+                        <p>account</p>
                     </div>
                 )}
 
